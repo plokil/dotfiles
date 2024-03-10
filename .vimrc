@@ -50,11 +50,14 @@ set laststatus=2
 
 call plug#begin('~/.vim/plugged')
 
-	"Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+	Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 	"Plug 'dense-analysis/ale'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'itchyny/lightline.vim'
-	Plug 'crusoexia/vim-monokai'
+	"Plug 'crusoexia/vim-monokai'
+	Plug 'sheerun/vim-polyglot'
+	Plug 'preservim/nerdcommenter'
+	Plug 'Raimondi/delimitMate'
 	"Plug 'anthillape/lightline-material-monokai'
 
 call plug#end()
@@ -71,8 +74,8 @@ augroup filetype_vim
 augroup END
 
 " colourscheme
-colorscheme monokai
-"let g:lightline = { 'colorscheme': 'moonfly' }
+colorscheme moonfly
+let g:lightline = { 'colorscheme': 'moonfly' }
 
 let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
