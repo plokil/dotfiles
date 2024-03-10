@@ -11,6 +11,8 @@ titlebar_padding 2
 titlebar_border_thickness 0
 # class                 border  backgr. text    indicator child_border
 client.focused          #104124 #104124 #ffffff #104124   #104124
+client.focused_inactive #000000 #000000 #ffffff #000000   #000000
+client.unfocused        #000000 #000000 #888888 #000000   #000000
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -250,4 +252,5 @@ exec wl-paste -t text --watch clipman store --no-persist
 exec dunst
 exec telegram-desktop -startintray
 exec discord --start-minimized
+exec wl-paste -t text --watch clipman store --no-persist
 include /etc/sway/config.d/*
