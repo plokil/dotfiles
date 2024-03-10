@@ -102,6 +102,11 @@ input * accel_profile flat
 
     # Start your music player
     bindsym $mod+m exec $music-player
+    # Media player controls
+    bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
+
     # Screenshot
     bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy -t image/png
     
