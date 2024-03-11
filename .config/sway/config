@@ -8,11 +8,11 @@
 
 font pango: Iosevka Nerd Font 10
 titlebar_padding 2
-titlebar_border_thickness 0
+titlebar_border_thickness 2
 # class                 border  backgr. text    indicator child_border
 client.focused          #104124 #104124 #ffffff #104124   #104124
-client.focused_inactive #000000 #000000 #ffffff #000000   #000000
-client.unfocused        #000000 #000000 #888888 #000000   #000000
+client.focused_inactive #05140b #05140b #ffffff #05140b   #05140b
+client.unfocused        #05140b #05140b #888888 #05140b   #05140b
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.

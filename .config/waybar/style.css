@@ -1,39 +1,53 @@
+@define-color background #05140b;
+@define-color foreground #104124;
+
 * {
 	font-size: 14px;
-	font-family: monospace;
+	font-family: Iosevka Nerd Font;
+	padding: 0;
+	margin: 0;
+	min-height: 0;
 }
 
 window#waybar {
-	background: #292b2e;
-	color: #fdf6e3;
+	background: @background;
+	color: #ffffff;
 }
 
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
-	color: #1a1a1a;
+	color: @foreground;
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
-	color: #292b2e;
-	background: #1a1a1a;
+	color: @background;
+	background: @foreground;
 }
 
-#workspaces,
-#clock.1,
-#clock.2,
-#clock.3,
+#workspaces {
+	background: @foreground;
+}
+#clock.1 {
+	background: @foreground;
+}
+#clock.2 {
+	background: @foreground;
+}
+#clock.3 {
+	background: @foreground;
+}
 #pulseaudio,
 #memory,
 #cpu,
 #battery,
 #disk,
 #tray {
-	background: #1a1a1a;
+	background: @foreground;
 }
 
 #workspaces button {
 	padding: 0 2px;
-	color: #fdf6e3;
+	color: #ffffff;
 }
 #workspaces button.focused {
 	color: #268bd2;
@@ -43,25 +57,32 @@ window#waybar {
 	text-shadow: inherit;
 }
 #workspaces button:hover {
-	background: #1a1a1a;
-	border: #1a1a1a;
+	background: @foreground;
+	border: @foreground;
 	padding: 0 3px;
 }
-
+#mode {
+	color: #aa0000;
+}
 #pulseaudio {
 	color: #268bd2;
+	background: @foreground;
 }
 #memory {
 	color: #2aa198;
+	background: @foreground;
 }
 #cpu {
 	color: #6c71c4;
+	background: @foreground;
 }
 #battery {
 	color: #859900;
+	background: @foreground;
 }
 #disk {
 	color: #b58900;
+	background: @foreground;
 }
 
 #clock,
@@ -71,4 +92,5 @@ window#waybar {
 #battery,
 #disk {
 	padding: 0 10px;
+	background: @foreground;
 }

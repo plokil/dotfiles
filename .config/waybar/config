@@ -3,10 +3,12 @@
 {
 	"layer": "top",
 	"position": "top",
-
+	"height": 20, 
+	
 	"modules-left": [
 		"sway/workspaces",
-		"custom/right-arrow-dark"
+		"custom/right-arrow-dark",
+		"sway/mode"
 	],
 	"modules-center": [
 		"custom/left-arrow-dark",
@@ -55,11 +57,16 @@
 
 	"sway/workspaces": {
 		"disable-scroll": true,
-		"format": "{name}"
+		"format": "{name}",
+		"tooltip": false
 	},
+	"sway/mode": {
+		"format": " {}",
+		"max-length": 50
+	},	
 
 	"clock#1": {
-		"format": "{:%a}",
+		"format": "{:%V %a}",
 		"tooltip": false
 	},
 	"clock#2": {
@@ -67,7 +74,7 @@
 		"tooltip": false
 	},
 	"clock#3": {
-		"format": "{:%m-%d}",
+		"format": "{:%d %b}",
 		"tooltip": false
 	},
 
@@ -115,6 +122,6 @@
 		"path": "/"
 	},
 	"tray": {
-		"icon-size": 20
+		"icon-size": 16 
 	}
 }
