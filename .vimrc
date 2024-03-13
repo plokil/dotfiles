@@ -58,6 +58,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'preservim/nerdcommenter'
 	Plug 'Raimondi/delimitMate'
+	Plug 'ap/vim-css-color'
 	"Plug 'anthillape/lightline-material-monokai'
 
 call plug#end()
