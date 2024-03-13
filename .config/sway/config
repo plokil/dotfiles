@@ -92,6 +92,8 @@ input * accel_profile flat
 
     # Start your launcher
     bindsym $mod+d exec $menu
+    # Emoji picker
+    bindsym $mod+period exec wofi-emoji
     
     # Start your browser
     bindsym $mod+w exec $browser
