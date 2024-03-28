@@ -2,82 +2,69 @@
 # i will comment and format this whole thing at some point
 # but now, strugle
 
+## Font
 font pango: Iosevka Nerd Font 10
+
+### Titlebar customizations
+#
+## Make it smaller
 titlebar_padding 2
 titlebar_border_thickness 2
+## Custom colours
 # class                 border  backgr. text    indicator child_border
 client.focused          #104124 #104124 #ffffff #104124   #104124
 client.focused_inactive #05140b #05140b #ffffff #05140b   #05140b
 client.unfocused        #05140b #05140b #888888 #05140b   #05140b
+
 ### Variables
 #
-# Logo key. Use Mod1 for Alt.
+## Modkey
 set $mod Mod4
-# Home row direction keys, like vim
+## Movement keys
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
+## Preferred applications/commands
+# Terminal emulator
 set $term kitty 
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
+# Application launcher
 set $menu wofi --show run | xargs swaymsg exec --
-# Your preferred browser
+# Browser
 set $browser librewolf
-# Your preferred file manager
+# File manager
 set $file-manager thunar
-# Your preferred music player
+# Music player
 set $music-player strawberry
 # Screenshot tool
 set $screenshot grim -g "$(slurp -d)" - | wl-copy -t image/png
 # Annotated screenshot tool
 set $an-screenshot grim -g "$(slurp -d)" - | satty -f -
+
 ### Output configuration
 #
+# Set background
 output * bg /home/plokil/Pictures/Wallpapers/wp6689712-desktop-4k-forest-way-wallpapers.jpg fill
-#
-# Example configuration:
-#
-#   output HDMI-A-1 resolution 1920x1080 position 1920,0
-#
-# You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
 #
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-
+## Keyboard
+# Layout config
 input * {
     xkb_layout us,ru
     xkb_options grp:caps_toggle,grp_led:scroll 	
 }
+# Enable numlock on startup
 input type:keyboard xkb_numlock enabled
 
+## Mouse
+# Disable mouse acceleration
 input * accel_profile flat
+
+### Idle configuration
+#
+# Put your idle config here
+#
 
 ### Key bindings
 #
@@ -109,6 +96,9 @@ input * accel_profile flat
     bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
+    # Mute button
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    # I don't actually use volume control keys, so I don't have them bound
 
     # Screenshot
     bindsym $mod+s exec $screenshot
@@ -239,17 +229,13 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
-#
-# Status Bar:
-#
-# Read `man 5 sway-bar` for more information about this section.
+## Status Bar
 bar {
     swaybar_command waybar
 }
 
-# Autostart
+## Autostart
 exec wl-paste -t text --watch clipman store --no-persist
 exec dunst
 exec telegram-desktop -startintray
