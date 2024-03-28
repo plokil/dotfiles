@@ -15,4 +15,6 @@ export SUDO_PROMPT="$(tput setaf 1 bold)[sudo] Password for %p:$(tput sgr0) "
 alias vencord-install='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias yzv='/home/plokil/YZVBot/bin/python /home/plokil/YZVBot/uzvarbot.py'
 
+export PATH="/home/user/dir/install/sbin:/home/user/dir/install/bin:$PATH"
+
 todo

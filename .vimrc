@@ -1,7 +1,8 @@
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
+" Enable type file detection. Vim will be able to try to detect the type of 
+" file in use.
 filetype on
 
 " Enable plugins and load plugin for the detected file type.
@@ -19,8 +20,10 @@ set number
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
 
-" Set tab width to 4 columns.
-set tabstop=4
+" Tabs are 2 spaces.
+set tabstop=2
+set shiftwidth=2
+set expandtab
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=10
@@ -38,13 +41,14 @@ set showcmd
 " Use highlighting when doing a search.
 set hlsearch
 
-" Update sign column every quarter second
+" Update sign column every quarter second.
 set updatetime=250
 
-" For Lightline status bar
+" For Lightline status bar.
 set laststatus=2
 
-" set foldmethod=syntax 
+" Highlight the 100th column.
+set colorcolumn=100
 
 " PLUGINS {{{
 

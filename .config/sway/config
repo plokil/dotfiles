@@ -1,10 +1,6 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
-#output * resolution --custom 1920x1080
+# plokil's config for Sway
+# i will comment and format this whole thing at some point
+# but now, strugle
 
 font pango: Iosevka Nerd Font 10
 titlebar_padding 2
@@ -34,10 +30,13 @@ set $browser librewolf
 set $file-manager thunar
 # Your preferred music player
 set $music-player strawberry
+# Screenshot tool
+set $screenshot grim -g "$(slurp -d)" - | wl-copy -t image/png
+# Annotated screenshot tool
+set $an-screenshot grim -g "$(slurp -d)" - | satty -f -
 ### Output configuration
 #
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg  /home/plokil/Pictures/Wallpapers/wp6689712-desktop-4k-forest-way-wallpapers.jpg fill
+output * bg /home/plokil/Pictures/Wallpapers/wp6689712-desktop-4k-forest-way-wallpapers.jpg fill
 #
 # Example configuration:
 #
@@ -112,7 +111,8 @@ input * accel_profile flat
     bindsym XF86AudioPrev exec playerctl previous
 
     # Screenshot
-    bindsym $mod+Shift+s exec grim -g "$(slurp -d)" - | wl-copy -t image/png
+    bindsym $mod+s exec $screenshot
+    bindsym $mod+Shift+s exec $an-screenshot
     
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -254,5 +254,5 @@ exec wl-paste -t text --watch clipman store --no-persist
 exec dunst
 exec telegram-desktop -startintray
 exec discord --start-minimized
-exec wl-paste -t text --watch clipman store --no-persist
+exec /usr/bin/lxpolkit 
 include /etc/sway/config.d/*
