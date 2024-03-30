@@ -29,7 +29,8 @@ set $right l
 # Terminal emulator
 set $term kitty 
 # Application launcher
-set $menu wofi --show run | xargs swaymsg exec --
+set $runmenu wofi --show run | xargs swaymsg exec --
+set $appmenu wofi --show drun | xargs swaymsg exec --
 # Browser
 set $browser librewolf
 # File manager
@@ -77,7 +78,8 @@ input * accel_profile flat
     bindsym $mod+Shift+c kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec $runmenu
+    bindsym $mod+Shift+d exec $appmenu
     # Emoji picker
     bindsym $mod+period exec wofi-emoji
     
