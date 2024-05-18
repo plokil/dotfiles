@@ -36,7 +36,7 @@ set $browser librewolf
 # File manager
 set $file-manager thunar
 # Music player
-set $music-player strawberry
+set $music-player cantata   
 # Screenshot tool
 set $screenshot grim -g "$(slurp -d)" - | wl-copy -t image/png
 # Annotated screenshot tool
@@ -46,6 +46,8 @@ set $an-screenshot grim -g "$(slurp -d)" - | satty -f -
 #
 # Set background
 output * bg /home/plokil/Pictures/Wallpapers/wp6689712-desktop-4k-forest-way-wallpapers.jpg fill
+workspace 1  output HDMI-A-1
+workspace 10 output DP-2
 
 ### Input configuration
 #
@@ -117,7 +119,7 @@ input * accel_profile flat
     bindsym $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaymsg exit
 #
 # Moving around:
 #
@@ -238,9 +240,10 @@ bar {
 }
 
 ## Autostart
-exec wl-paste -t text --watch clipman store --no-persist
+exec wl-paste -t text --watch clipman store 
 exec dunst
 exec telegram-desktop -startintray
 exec discord --start-minimized
 exec /usr/bin/lxpolkit 
+exec mpd
 include /etc/sway/config.d/*

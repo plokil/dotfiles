@@ -14,8 +14,9 @@ filetype indent on
 " Turn syntax highlighting on.
 syntax on
 
-" Add numbers to each line on the left-hand side.
+" Line numbers
 set number
+set relativenumber
 
 " Highlight cursor line underneath the cursor horizontally.
 set cursorline
@@ -49,6 +50,12 @@ set laststatus=2
 
 " Highlight the 100th column.
 set colorcolumn=100
+
+" Set the system clipboard
+set clipboard=unnamedplus 
+
+" Don't wrap long lines
+:set nowrap
 
 " PLUGINS {{{
 
