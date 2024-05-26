@@ -12,7 +12,7 @@ titlebar_padding 2
 titlebar_border_thickness 2
 ## Custom colours
 # class                 border  backgr. text    indicator child_border
-client.focused          #b2ceee #b2ceee #080808 #b2ceee   #b2ceee
+client.focused          #323437 #323437 #eeeeee #323437   #323437
 client.focused_inactive #080808 #080808 #eeeeee #080808   #080808
 client.unfocused        #080808 #080808 #979797 #080808   #080808
 
