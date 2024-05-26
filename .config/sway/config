@@ -45,7 +45,7 @@ set $an-screenshot grim -g "$(slurp -d)" - | satty -f -
 ### Output configuration
 #
 # Set background
-output * bg /home/plokil/Pictures/Wallpapers/wp6689712-desktop-4k-forest-way-wallpapers.jpg fill
+output * bg /home/plokil/Pictures/Wallpapers/080808.png fill
 workspace 1  output HDMI-A-1
 workspace 10 output DP-2
 
