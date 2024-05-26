@@ -17,13 +17,15 @@ syntax on
 " Line numbers
 set number
 set relativenumber
+set cursorline
+set cursorlineopt=number
 
 " Highlight cursor line underneath the cursor horizontally.
-set cursorline
+"set cursorline
 
-" Tabs are 2 spaces.
-set tabstop=2
-set shiftwidth=2
+" Tabs are 4 spaces.
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " Do not let cursor scroll below or above N number of lines when scrolling.
@@ -55,7 +57,17 @@ set colorcolumn=100
 set clipboard=unnamedplus 
 
 " Don't wrap long lines
-:set nowrap
+set nowrap
+
+" Disable ~'s  in the line number collumn when there is no line
+set fcs=eob:\ 
+
+" NerdCommenter space after a comment character
+let NERDSpaceDelims=1
+
+" Map the leader key to space
+nnoremap <SPACE> <Nop>
+map <SPACE> \
 
 " PLUGINS {{{
 

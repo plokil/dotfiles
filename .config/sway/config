@@ -55,7 +55,7 @@ workspace 10 output DP-2
 # Layout config
 input * {
     xkb_layout us,ru
-    xkb_options grp:caps_toggle,grp_led:scroll 	
+    xkb_options grp_led:scroll,caps:swapescape,grp:win_space_toggle 	
 }
 # Enable numlock on startup
 input type:keyboard xkb_numlock enabled
@@ -189,7 +189,7 @@ input * accel_profile flat
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+Shift+f floating toggle
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
@@ -243,7 +243,7 @@ bar {
 exec wl-paste -t text --watch clipman store 
 exec dunst
 exec telegram-desktop -startintray
-exec discord --start-minimized
+#exec discord --start-minimized
 exec /usr/bin/lxpolkit 
 exec mpd
 include /etc/sway/config.d/*
