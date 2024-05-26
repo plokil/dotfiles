@@ -1,5 +1,5 @@
-@define-color background #05140b;
-@define-color foreground #104124;
+@define-color background #080808;
+@define-color foreground #323437;
 
 * {
 	font-size: 14px;
@@ -11,7 +11,7 @@
 
 window#waybar {
 	background: @background;
-	color: #ffffff;
+	color: #bdbdbd;
 }
 
 #custom-right-arrow-dark,
@@ -47,10 +47,10 @@ window#waybar {
 
 #workspaces button {
 	padding: 0 2px;
-	color: #ffffff;
+	color: #bdbdbd;
 }
 #workspaces button.focused {
-	color: #268bd2;
+	color: #74b2ff;
 }
 #workspaces button:hover {
 	box-shadow: inherit;
@@ -65,15 +65,15 @@ window#waybar {
 	color: #aa0000;
 }
 #pulseaudio {
-	color: #268bd2;
+	color: #80a0ff;
 	background: @foreground;
 }
 #memory {
-	color: #2aa198;
+	color: #8cc85f;
 	background: @foreground;
 }
 #cpu {
-	color: #6c71c4;
+	color: #cf87e8;
 	background: @foreground;
 }
 #battery {
@@ -81,7 +81,7 @@ window#waybar {
 	background: @foreground;
 }
 #disk {
-	color: #b58900;
+	color: #e3c78a;
 	background: @foreground;
 }
 
