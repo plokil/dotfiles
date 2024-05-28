@@ -29,8 +29,8 @@ set $right l
 # Terminal emulator
 set $term kitty 
 # Application launcher
-set $runmenu wofi --show run | xargs swaymsg exec --
-set $appmenu wofi --show drun | xargs swaymsg exec --
+set $runmenu rofi -show run -theme moonfly | xargs swaymsg exec --
+set $appmenu rofi -show drun -theme moonfly | xargs swaymsg exec --
 # Browser
 set $browser librewolf
 # File manager
@@ -82,8 +82,6 @@ input * accel_profile flat
     # Start your launcher
     bindsym $mod+d exec $runmenu
     bindsym $mod+Shift+d exec $appmenu
-    # Emoji picker
-    bindsym $mod+period exec wofi-emoji
     
     # Start your browser
     bindsym $mod+w exec $browser
@@ -93,6 +91,9 @@ input * accel_profile flat
 
     # Start your file manager
     bindsym $mod+e exec $file-manager
+
+    # Color picker
+    bindsym $mod+Shift+p exec wl-color-picker
 
     # Start your music player
     bindsym $mod+m exec $music-player
