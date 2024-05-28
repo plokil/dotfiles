@@ -80,6 +80,7 @@ alias vencord-install='sh -c \
 alias dimscreen='gammastep -l 0:0 -o -b 0.6:0.6'
 alias vim='echo "Please use nvim."; sleep 2; vim'
 alias fixtv='swaymsg output HDMI-A-1 mode 3840x2160@59.940Hz'
+alias terraria='/home/plokil/.local/share/Steam/steamapps/common/Terraria/Terraria'
 
 # Shell integrations
 eval "$(fzf --zsh)"
