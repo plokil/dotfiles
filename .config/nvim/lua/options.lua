@@ -30,7 +30,7 @@ vim.opt.scrolloff = 10              -- scroll the screen so that the cursor does
 
 -- Searching
 vim.opt.incsearch = true            -- search as characters are entered
-vim.opt.hlsearch = false            -- do not highlight matches
+vim.opt.hlsearch = true             -- highlight matches
 vim.opt.ignorecase = true           -- ignore case in searches by default
 vim.opt.smartcase = true            -- but make it case sensitive if an uppercase is entered
 
