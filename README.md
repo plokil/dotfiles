@@ -63,4 +63,4 @@ chsh -S $(which zsh)
 First time opening of nvim and zsh
 
 This should be it, if you have any questions, feel free to open an issue or reach out to me via
-e-mail (plokil.deb@gmail.com) or Telegram ((@plokilx)[https://t.me/plokilx])
+e-mail (plokil.deb@gmail.com) or Telegram ([@plokilx](https://t.me/plokilx))
