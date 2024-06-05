@@ -46,8 +46,7 @@ set $an-screenshot grim -g "$(slurp -d)" - | satty -f -
 #
 # Set background
 output * bg ./background.png fill
-workspace 1  output HDMI-A-1
-workspace 10 output DP-2
+include output.conf
 
 ### Input configuration
 #
@@ -241,10 +240,5 @@ bar {
 }
 
 ## Autostart
-exec wl-paste -t text --watch clipman store 
-exec dunst
-exec telegram-desktop -startintray
-#exec discord --start-minimized
-exec /usr/bin/lxpolkit 
-exec mpd
+include autostart.conf
 include /etc/sway/config.d/*
