@@ -27,30 +27,13 @@ window#waybar {
 #workspaces {
 	background: @foreground;
 }
-#clock.1 {
-	background: @foreground;
-}
-#clock.2 {
-	background: @foreground;
-}
-#clock.3 {
-	background: @foreground;
-}
-#pulseaudio,
-#memory,
-#cpu,
-#battery,
-#disk,
-#tray {
-	background: @foreground;
-}
 
 #workspaces button {
 	padding: 0 2px;
 	color: #bdbdbd;
 }
 #workspaces button.focused {
-	color: #74b2ff;
+	color: #80a0ff;
 }
 #workspaces button:hover {
 	box-shadow: inherit;
@@ -62,11 +45,14 @@ window#waybar {
 	padding: 0 3px;
 }
 #mode {
-	color: #aa0000;
+	color: #ff5454;
+}
+
+#mpd {
+    color: #80a0ff;
 }
 #pulseaudio {
-	color: #80a0ff;
-	background: @foreground;
+	color: #ff5454;
 }
 #memory {
 	color: #8cc85f;
@@ -84,7 +70,11 @@ window#waybar {
 	color: #e3c78a;
 	background: @foreground;
 }
+#tray {
+	background: @foreground;
+}
 
+#mpd,
 #clock,
 #pulseaudio,
 #memory,
@@ -92,5 +82,4 @@ window#waybar {
 #battery,
 #disk {
 	padding: 0 10px;
-	background: @foreground;
 }
