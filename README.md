@@ -12,9 +12,10 @@ him for this beautiful colorscheme
 * kitty as a terminal emulator
 * librewolf as a browser
 * thunar as a file manager
-* cantata and mpd for music
+* cantata, mpd and mpc for music
 * nvim as a text editor
 * zsh as a shell
+* oh-my-posh for the shell prompt
 * zoxide as a better cd alternative
 * fzf for fuzzyfinding in nvim and zsh
 * todo-bin for todo list in terminal
@@ -23,23 +24,22 @@ him for this beautiful colorscheme
 * rofi-wayland for run
 * wl-clipboard for clipboard
 * grim, slurp and satty for screenshots
-* Iosevka Nerd Font for everything besides kitty and
-* BlexMono Nerd Font for kitty
+* BlexMono Nerd Font for font 
 
 I might have forgotten something, so be sure to open an issue if something is missing. Also you'll 
 have to configure mpd and styles for GTK and QT yourself. Anyway, if you are using Arch Linux or one
 of its derivatives, here is a command to install all this junk onto your system: 
 
 ```
-sudo pacman -Syu git stow kitty thunar mpd nvim zsh zoxide fzf sway dunst rofi-wayland \
-                 wl-clipboard slurp ttf-iosevka-nerd ttf-ibmplex-mono-nerd 
+sudo pacman -Syu git stow kitty thunar mpd mpc nvim zsh zoxide fzf sway dunst rofi-wayland \
+                 wl-clipboard slurp ttf-ibmplex-mono-nerd 
 ```
 
 This does not install librewolf, todo, cantata and slurp, since they are only available from AUR,
 use you favorite AUR helper to install them:
 
 ```
-paru -S librewolf-bin cantata slurp todo-bin
+paru -S librewolf-bin cantata slurp todo-bin oh-my-posh-bin
 ```
 
 ## Installation
