@@ -3,7 +3,7 @@
 # but now, strugle
 
 ## Font
-font pango: Iosevka Nerd Font 10
+font pango: BlexMono Nerd Font 10
 
 ### Titlebar customizations
 #
