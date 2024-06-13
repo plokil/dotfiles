@@ -91,6 +91,9 @@ input * accel_profile flat
     # Start your file manager
     bindsym $mod+e exec $file-manager
 
+    # Lock 
+    bindsym $mod+q exec swaylock
+
     # Color picker
     bindsym $mod+Shift+p exec wl-color-picker
 

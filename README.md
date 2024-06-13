@@ -20,6 +20,7 @@ him for this beautiful colorscheme
 * fzf for fuzzyfinding in nvim and zsh
 * todo-bin for todo list in terminal
 * sway as a Wayland tiling wm
+* swaylock-effects for screenlocking
 * dunst as a notification thingy
 * rofi-wayland for run
 * wl-clipboard for clipboard
@@ -35,11 +36,11 @@ sudo pacman -Syu git stow kitty thunar mpd mpc nvim zsh zoxide fzf sway dunst ro
                  wl-clipboard slurp ttf-ibmplex-mono-nerd 
 ```
 
-This does not install librewolf, todo, cantata and slurp, since they are only available from AUR,
+This does not install librewolf, todo, swaylock-effects, oh-my-posh, cantata and slurp, since they are only available from AUR,
 use you favorite AUR helper to install them:
 
 ```
-paru -S librewolf-bin cantata slurp todo-bin oh-my-posh-bin
+paru -S librewolf-bin cantata slurp todo-bin oh-my-posh-bin swaylock-effects
 ```
 
 ## Installation
