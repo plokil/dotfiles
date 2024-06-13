@@ -3,11 +3,10 @@
 {
 	"layer": "top",
 	"position": "top",
-	"height": 20, 
+	"height": 21, 
 	
 	"modules-left": [
 		"sway/workspaces",
-		"custom/right-arrow-dark",
 		"sway/mode"
 	],
 	"modules-center": [
@@ -16,7 +15,6 @@
 	"modules-right": [
 		"mpd",
 		"pulseaudio",
-		"custom/left-arrow-dark",
 		"tray"
 	],
 

@@ -25,7 +25,7 @@ window#waybar {
 }
 
 #workspaces {
-	background: @foreground;
+	background: @background;
 }
 
 #workspaces button {
@@ -40,8 +40,8 @@ window#waybar {
 	text-shadow: inherit;
 }
 #workspaces button:hover {
-	background: @foreground;
-	border: @foreground;
+	background: @background;
+	border: @background;
 	padding: 0 3px;
 }
 #mode {
@@ -71,7 +71,7 @@ window#waybar {
 	background: @foreground;
 }
 #tray {
-	background: @foreground;
+	background: @background;
 }
 
 #mpd,
