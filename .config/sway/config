@@ -94,6 +94,9 @@ input * accel_profile flat
     # Lock 
     bindsym $mod+q exec swaylock
 
+    # Hide waybar
+    bindsym $mod+o exec killall -SIGUSR1 waybar
+
     # Color picker
     bindsym $mod+Shift+p exec wl-color-picker
 
