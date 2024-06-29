@@ -217,7 +217,7 @@ input * accel_profile flat
 #
 # Resizing containers:
 #
-mode "resize" {
+mode "RESIZE" {
     # left will shrink the containers width
     # right will grow the containers width
     # up will shrink the containers height
@@ -237,7 +237,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+r mode "resize"
+bindsym $mod+r mode "RESIZE"
 
 
 ## Status Bar
