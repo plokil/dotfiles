@@ -27,7 +27,7 @@ set $up k
 set $right l
 ## Preferred applications/commands
 # Terminal emulator
-set $term kitty 
+set $term alacritty
 # Application launcher
 set $runmenu rofi -show run -theme moonfly | xargs swaymsg exec --
 set $appmenu rofi -show drun -theme moonfly | xargs swaymsg exec --
@@ -84,6 +84,7 @@ input * accel_profile flat
     
     # Start your browser
     bindsym $mod+w exec $browser
+    bindsym $mod+Shift+w exec torbrowser-launcher
 
     # Start Telegram
     bindsym $mod+t exec telegram-desktop

@@ -27,6 +27,7 @@ vim.opt.wrap = false                -- don't wrap long lines
 vim.opt.fcs = "eob: "               -- disable the ~'s in line column for clearer ui
 vim.opt.scrolloff = 10              -- scroll the screen so that the cursor doesn't touch the top
                                     -- or the bottom of the screen
+vim.opt.title = true                -- change title of the terminal
 
 -- Searching
 vim.opt.incsearch = true            -- search as characters are entered

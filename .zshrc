@@ -1,6 +1,3 @@
-# Show the todo list on the shell startup
-todo
-
 # oh-my-posh prompt
 eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/zen.toml)"
 
@@ -42,6 +39,8 @@ bindkey -e
 # History search
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+# del key
+bindkey "^[[3~" delete-char
 
 # History
 HISTSIZE=5000
