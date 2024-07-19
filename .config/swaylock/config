@@ -34,3 +34,4 @@ text-caps-lock-color=ff5454ff
 text-ver-color=bdbdbdff
 text-wrong-color=bdbdbdff
 hide-keyboard-layout
+show-failed-attempts
