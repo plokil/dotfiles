@@ -93,7 +93,7 @@ input * accel_profile flat
     bindsym $mod+e exec $file-manager
 
     # Lock 
-    bindsym $mod+q exec swaylock
+    bindsym $mod+q exec "touch /home/plokil/swaylock.lock; swaylock; rm /home/plokil/swaylock.lock"
 
     # Hide waybar
     bindsym $mod+o exec killall -SIGUSR1 waybar
