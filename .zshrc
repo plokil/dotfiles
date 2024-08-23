@@ -85,6 +85,7 @@ alias cd='z'
 eval "$(zoxide init zsh)"
 
 export PATH=$PATH:~/.spoof-dpi/bin
+export PATH=$PATH:~/.cargo/bin
 
 # Created by `pipx` on 2024-08-08 12:22:35
 export PATH="$PATH:/home/plokil/.local/bin"
