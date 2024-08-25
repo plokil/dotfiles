@@ -3,6 +3,14 @@ vim.opt.clipboard = 'unnamedplus'   -- use system clipboard
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 vim.opt.mouse = 'a'                 -- allow the mouse to be used in Nvim
 
+vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
+vim.opt.shortmess = vim.opt.shortmess + { c = true}
+vim.api.nvim_set_option('updatetime', 300) 
+vim.cmd([[
+set signcolumn=yes
+autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
+]])
+
 -- Tab
 vim.opt.tabstop = 4                 -- number of visual spaces per TAB
 vim.opt.softtabstop = 4             -- number of spaces in tab when editing
@@ -22,8 +30,8 @@ vim.opt.splitright = true           -- open new horizontal splits right
 vim.opt.showmode = false            -- remove the mode hint from the status line
 vim.opt.updatetime = 250            -- for git line stuff, update the thing every 250ms
 vim.opt.laststatus = 2              -- for lualine
-vim.opt.colorcolumn = "80"         -- highlight the Xth column
-vim.opt.wrap = false                -- don't wrap long lines
+vim.opt.colorcolumn = "80"          -- highlight the Xth column
+vim.opt.wrap = true                 -- wrap long lines
 vim.opt.fcs = "eob: "               -- disable the ~'s in line column for clearer ui
 vim.opt.scrolloff = 10              -- scroll the screen so that the cursor doesn't touch the top
                                     -- or the bottom of the screen
