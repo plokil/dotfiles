@@ -60,10 +60,8 @@
         "on-click-middle": "mpc pause",
         "on-click-right": "mpc pause",
         "on-scroll-up": "mpc volume +1",
-        "on-scroll-down": "mpc volume -1"
-
+        "on-scroll-down": "mpc volume +1"
     },
-
 	"pulseaudio": {
 		"format": "",
 		"format-muted": "MUTED",

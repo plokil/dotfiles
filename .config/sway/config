@@ -54,7 +54,7 @@ include output.conf
 # Layout config
 input * {
     xkb_layout us,ru
-    xkb_options grp_led:scroll,caps:swapescape,grp:win_space_toggle 	
+    xkb_options grp_led:scroll,caps:escape_shifted_capslock,grp:win_space_toggle 	
 }
 # Enable numlock on startup
 input type:keyboard xkb_numlock enabled
