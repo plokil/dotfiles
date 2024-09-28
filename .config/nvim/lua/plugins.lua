@@ -75,6 +75,10 @@ require("lazy").setup({
     {
         "voldikss/vim-floaterm", 
     },
+    --- zen mode for zen stuff you know ---
+    {
+        "folke/zen-mode.nvim",
+    },
     -- Rust stuff mainly
     {
         "williamboman/mason.nvim",
