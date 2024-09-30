@@ -35,6 +35,9 @@ window#waybar {
 #workspaces button.focused {
 	color: #80a0ff;
 }
+#workspaces button.active {
+    color: #80a0ff;
+}
 #workspaces button:hover {
 	box-shadow: inherit;
 	text-shadow: inherit;
@@ -43,6 +46,9 @@ window#waybar {
 	background: @background;
 	border: @background;
 	padding: 0 3px;
+}
+#window {
+    color: #949494;
 }
 #mode {
 	color: #ff5454;

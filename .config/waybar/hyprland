@@ -1,0 +1,45 @@
+// -*- mode: json -*-
+
+{
+	"layer": "top",
+
+	"position": "top",
+	"height": 21, 
+	
+	"modules-left": [
+		"hyprland/workspaces",
+        "hyprland/window"
+	],
+	"modules-center": [
+		"clock"
+	],
+	"modules-right": [
+		"pulseaudio",
+		"tray"
+	],
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}",
+		"tooltip": false
+	},
+    "hyprland/window": {
+        "separate-outputs": true,
+        "format": " {title}",
+    },
+
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip": true,
+        "tooltip-format": "{:%Y-%m-%d %A}"
+    },
+
+	"pulseaudio": {
+		"format": "",
+		"format-muted": "MUTED",
+		"on-click": "pamixer -t"
+	},
+	"tray": {
+		"icon-size": 16 
+	}
+}
