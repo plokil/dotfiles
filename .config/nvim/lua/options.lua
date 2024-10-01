@@ -10,6 +10,9 @@ vim.cmd([[
 set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
 
 -- Tab
 vim.opt.tabstop = 4                 -- number of visual spaces per TAB
