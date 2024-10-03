@@ -66,7 +66,7 @@ zstyle ':fzf-tab:complete:z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias ls='eza -l --icons=auto --color=auto --group-directories-first'
 alias la='eza -lA --icons=auto --color=auto --group-directories-first'
-alias grep='echo "use ripgrep"; sleep 1; grep --color=auto'
+alias grep='grep --color=auto'
 alias vencord-install='sh -c \
   "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 alias dimscreen='gammastep -l 0:0 -o -b 0.6:0.6'
