@@ -22,8 +22,6 @@ zinit light Aloxaf/fzf-tab
 # Zinit snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::sudo
-source /usr/share/doc/pkgfile/command-not-found.zsh
-zinit snippet OMZP::command-not-found
 
 # Load completions
 autoload -U compinit && compinit
@@ -72,7 +70,6 @@ alias vencord-install='sh -c \
 alias dimscreen='gammastep -l 0:0 -o -b 0.6:0.6'
 alias fixtv='swaymsg output HDMI-A-1 mode 3840x2160@59.940Hz'
 alias terraria='/home/plokil/.local/share/Steam/steamapps/common/Terraria/Terraria'
-alias swaylock='touch /home/plokil/swaylock.lock; swaylock; rm /home/plokil/swaylock.lock'
 
 # Env variables
 export EDITOR=nvim
