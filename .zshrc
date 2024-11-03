@@ -65,11 +65,6 @@ zstyle ':fzf-tab:complete:z:*' fzf-preview 'ls --color $realpath'
 alias ls='eza -l --icons=auto --color=auto --group-directories-first'
 alias la='eza -lA --icons=auto --color=auto --group-directories-first'
 alias grep='grep --color=auto'
-alias vencord-install='sh -c \
-  "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
-alias dimscreen='gammastep -l 0:0 -o -b 0.6:0.6'
-alias fixtv='swaymsg output HDMI-A-1 mode 3840x2160@59.940Hz'
-alias terraria='/home/plokil/.local/share/Steam/steamapps/common/Terraria/Terraria'
 
 # Env variables
 export EDITOR=nvim
