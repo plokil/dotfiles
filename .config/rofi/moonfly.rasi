@@ -7,21 +7,18 @@
 * {
     spacing:                     2;
 
-    red:                         #ff5454;
-    blue:                        #80a0ff;
-
-    foreground:                  #bdbdbd;
-    background:                  #080808;
+    foreground:                  #bdbdbdff;
+    background:                  #080808cc;
 
     // Normal
     normal-foreground:           @foreground;
-    normal-background:           @background;
+    normal-background:           #08080800;
 
     alternate-normal-foreground: @normal-foreground;
     alternate-normal-background: @normal-background;
 
-    selected-normal-foreground:  #080808;
-    selected-normal-background:  #b2ceee;
+    selected-normal-foreground:  #080808cc;
+    selected-normal-background:  #b2ceeecc;
 
     
     // Urgent
@@ -46,11 +43,8 @@
     selected-active-background:  @selected-normal-background;
 
 
-    lightfg:                     rgba ( 88, 104, 117, 100 % );
-    lightbg:                     rgba ( 238, 232, 213, 100 % );
-
-    border-color:                #323437;
-    separatorcolor:              @border-color;
+    border-color:                #b2ceeecc;
+    separatorcolor:              @background;
 
     background-color:            rgba ( 0, 0, 0, 0 % );
 }
@@ -58,6 +52,7 @@ window {
     background-color: @background;
     border:           2;
     padding:          5;
+    border-radius:    10px 10px 10px 10px;
 }
 mainbox {
     border:  0;
@@ -76,7 +71,7 @@ listview {
     border:       2px 0px 0px ;
     border-color: @separatorcolor;
     spacing:      2px ;
-    scrollbar:    true;
+    scrollbar:    false;
     padding:      2px 0px 0px ;
 }
 element {
